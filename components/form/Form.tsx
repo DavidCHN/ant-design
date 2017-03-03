@@ -70,6 +70,8 @@ export type WrappedFormUtils = {
     rules?: Array<any>;
     /** 是否和其他控件互斥，特别用于 Radio 单选控件 */
     exclusive?: boolean;
+    /** 表单输入改变时间 */
+    onChange?: (value: any) => void;
   }): (node: React.ReactNode) => React.ReactNode;
 }
 
